@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Password</title>
+</head>
+<body>
+    <h1>Indovina la password per passare alla pagina successiva!</h1>
+    
+    <img src="path/to/your/image.jpg" alt="Immagine da visualizzare" width="500">
+
+    <form id="passwordForm">
+        <label for="password">Inserisci la password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Verifica</button>
+    </form>
+
+    <script>
+        // Password corretta
+        const correctPassword = "segreto123"; // Sostituisci con la tua password
+
+        // Funzione per gestire la verifica della password
+        document.getElementById("passwordForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impedisce il comportamento di default del form
+
+            // Ottieni la password inserita
+            const password = document.getElementById("password").value;
+
+            // Verifica se la password è corretta
+            if (password === correctPassword) {
+                // Reindirizza alla nuova pagina se la password è corretta
+                window.location.href = "nextpage.html"; // Sostituisci con il tuo URL della pagina successiva
+            } else {
+                alert("Password errata, riprova!");
+            }
+        });
+    </script>
+</body>
+</html>
