@@ -28,10 +28,11 @@
             const password = document.getElementById("password").value;
 
             // Verifica se la password è corretta
-            if (password === correctPassword) {
-                <meta http-equiv="refresh" content="3; url=indizio3.html">
-                window.location.href = "nextpage.html"; // Sostituisci con il tuo URL della pagina successiva
-            } else {
+            if (password == correctPassword) {
+    setTimeout(function() {
+        window.location.href = "indizio3.html";  // Reindirizza alla nuova pagina dopo 3 secondi
+    }, 3000);  // 3000 millisecondi = 3 secondi
+ }else {
                 alert("Password errata, riprova!!!");
             }
         });
