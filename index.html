@@ -27,11 +27,12 @@
             // Ottieni la password inserita
             const password = document.getElementById("password").value;
 
-            // Verifica se la password è corretta
             if (password == correctPassword) {
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3; url=indizio2.html">
-            } else {
+    setTimeout(function() {
+        window.location.href = "indizio2.html";  // Reindirizza alla nuova pagina dopo 3 secondi
+    }, 3000);  // 3000 millisecondi = 3 secondi
+ }
+ else {
                 alert("Password errata, riprova!!!");
             }
         });
