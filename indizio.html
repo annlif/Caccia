@@ -7,34 +7,6 @@
 </head>
 <body>
     
-    <img src="7.jpg" alt="Immagine da visualizzare" width="500">
-
-    <form id="passwordForm">
-        <label for="password">Inserisci la password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Verifica</button>
-    </form>
-
-    <script>
-        // Password corretta
-        const correctPassword = "segreto"; // Sostituisci con la tua password
-
-        // Funzione per gestire la verifica della password
-        document.getElementById("passwordForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Impedisce il comportamento di default del form
-
-            // Ottieni la password inserita
-            const password = document.getElementById("password").value;
-
-            // Verifica se la password è corretta
-            if (password == correctPassword) {
-    setTimeout(function() {
-        window.location.href = "indizio8.html";  // Reindirizza alla nuova pagina dopo 3 secondi
-    }, 3000);  // 3000 millisecondi = 3 secondi
- }else {
-                alert("Password errata, riprova!!!");
-            }
-        });
-    </script>
+    <img src="8.jpg" alt="Immagine da visualizzare" width="500">
 </body>
 </html>
